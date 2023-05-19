@@ -1,8 +1,10 @@
 from django.urls import path
 from django.views.generic import TemplateView
 
+from megano_auth.views import RegisterView
+
 urlpatterns = [
-    path('', TemplateView.as_view(template_name="frontend/index.html")),
+    path('', TemplateView.as_view(template_name="frontend/index.html"), name='index-page'),
     path('about/', TemplateView.as_view(template_name="frontend/about.html")),
     path('account/', TemplateView.as_view(template_name="frontend/account.html")),
     path('cart/', TemplateView.as_view(template_name="frontend/cart.html")),
