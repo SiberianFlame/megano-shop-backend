@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'api',
     'category_app.apps.CategoryAppConfig',
     'megano_auth.apps.MeganoAuthConfig',
+    'product.apps.ProductConfig',
 
 ]
 
