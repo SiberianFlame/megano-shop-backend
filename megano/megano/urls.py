@@ -22,7 +22,15 @@ from django.conf import settings
 urlpatterns = [
     path('', include('frontend.urls')),
     path('admin/', admin.site.urls),
-    path("api/", include("api.urls")),
+    path('api/', include('app_auth.urls')),
+    path('api/', include('app_basket.urls')),
+    path('api/', include('app_category.urls')),
+    path('api/', include('app_order.urls')),
+    path('api/', include('app_payment.urls')),
+    path('api/', include('app_product.urls')),
 ]
 
+urlpatterns += [
+    path('django_rq/', include('django_rq.urls'))
+]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

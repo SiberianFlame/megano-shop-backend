@@ -1,0 +1,24 @@
+[
+  {
+    "model": "app_auth.profile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "full_name": "Соловьев Виктор Максимович",
+      "email": "admin_mail@skillbox.ru",
+      "phone": "8-800-555-35-35",
+      "avatar": "avatar/admin/ав1.jpg"
+    }
+  },
+  {
+    "model": "app_auth.profile",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "full_name": "Давидов Давид Давидович",
+      "email": "randommail@mail.ru",
+      "phone": "8-800-555-35-35",
+      "avatar": "avatar/david/ref.jpg"
+    }
+  }
+]
