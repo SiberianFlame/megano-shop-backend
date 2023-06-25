@@ -35,7 +35,7 @@ class CatalogViewSet(viewsets.ModelViewSet):
         :return: Filtered queryset
         """
 
-        queryset = Product.objects.all().prefetch_related('reviews_all')
+        queryset = Product.objects.filter(count__gt=0).prefetch_related('reviews_all')
         filter_params = self.request.query_params
 
         queryset = apply_filters_to_queryset(queryset, filter_params)

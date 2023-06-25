@@ -1,3 +1,6 @@
+from django.db.models import QuerySet
+
+
 def is_card_number_valid(card_number: str) -> bool:
     """
     Checks whether the last number in the account number is even, not zero,
@@ -10,3 +13,4 @@ def is_card_number_valid(card_number: str) -> bool:
         return False
     else:
         return True
+
