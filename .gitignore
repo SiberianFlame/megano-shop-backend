@@ -1,2 +1,8 @@
 
 .DS_Store
+dump.rdb
+my_venv
+megano/dump.rdb
+megano/db.sqlite3
+megano/.env
+.idea
