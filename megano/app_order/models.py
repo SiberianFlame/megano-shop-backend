@@ -19,7 +19,7 @@ class Order(models.Model):
     status = models.CharField(max_length=20)
     city = models.CharField(max_length=30)
     address = models.CharField(max_length=100)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='orders', default=None, null=True, blank=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='orders')
 
     def __str__(self):
         return f'Order on {self.created_at}'

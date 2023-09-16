@@ -122,7 +122,7 @@ class Sale(models.Model):
 
     def save(self, *args, **kwargs):
         """
-        Changing price of the product after saving the sale
+        Changing price of the product before saving the sale
         """
 
         self.product.old_price = self.product.price
@@ -132,7 +132,7 @@ class Sale(models.Model):
 
     def delete(self, *args, **kwargs):
         """
-        Changing price of the product after deleting the sale
+        Changing price of the product before deleting the sale
         """
 
         self.product.price = self.product.old_price
